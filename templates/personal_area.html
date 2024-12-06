@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<sectionc class="base">
+    <div class="sidebar">
+        <a href="/"><img src="../static/img/logo.png" width="60px" height="60px"></a>
+        <a href="/dashboard"><p>Статистика</p></a>
+        <a href="/"><p>Сократить</p></a>
+        <a href="/links"><p>Мои ссылки</p></a>
+        <a href="/api-doc"><p>API</p></a>
+        <a href="/logout"><p>Выйти</p></a>
+    </div>
+    <div class="middle">
+        {% block middle %}
+
+        {% endblock %}
+    </div>
+</sectionc>
+{% endblock %}

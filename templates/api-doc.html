@@ -1,0 +1,54 @@
+{% extends "personal_area.html" %}
+
+
+{% block middle %}
+<div class="api">
+    <p class="h2">Ваш API токен</p>
+    <p class="api-token">{{api_token}}</p>
+
+</div>
+<div class="doc">
+    <p class="h3">Документация</p>
+    <p class="text-doc">
+        Создать короткую ссылку<br>
+        <br>
+        POST /api/v1/links<br>
+        <br>
+        Обязательные параметры:<br>
+        header 'api_token: XXXXXX'<br>
+        link String <br>
+        <br>
+        Дополнительные параметры:<br>
+        alias String<br>
+        password String<br>
+    </p>
+        <p class="text-doc">
+        Список всех ссылок<br>
+            <br>
+        GET /api/v1/links<br>
+            Обязательные параметры:<br>
+            header 'api_token: XXXXXX'<br>
+
+    </p>
+    <p class="text-doc">
+        Информация о ссылки<br>
+        <br>
+        GET /api/v1/links/links_alias<br>
+        Обязательные параметры:<br>
+            header 'api_token: XXXXXX'<br>
+        links_alias: алиас ссылки
+
+
+    </p>
+        <p class="text-doc">
+        Удаление ссылки<br>
+        <br>
+        DELETE /api/v1/links/links_alias<br>
+        Обязательные параметры:<br>
+            header 'api_token: XXXXXX'<br>
+        links_alias: алиас ссылки
+
+
+    </p>
+</div>
+{% endblock %}

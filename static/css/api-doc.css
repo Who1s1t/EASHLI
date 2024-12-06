@@ -1,0 +1,24 @@
+.middle .api{
+    margin: 30px;
+
+}
+.middle .api .h2{
+    font-size: 30px;
+
+}
+.middle .api .api-token{
+    margin-left: 10px;
+    background-color: rgba(255, 165, 0, 0.5);
+
+}
+.middle .doc{
+    margin: 30px;
+
+}
+.middle .doc .h3 {
+    font-size: 24px;
+}
+.middle .doc .text-doc{
+    margin: 35px 0 35px 0;
+    line-height: 2;
+}

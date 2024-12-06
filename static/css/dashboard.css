@@ -1,0 +1,21 @@
+.middle .content{
+    display: flex;
+}
+.middle .content .ram{
+    display: flex;
+    margin: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+.middle .content .ram .text{
+    display: block;
+    margin: 0;
+}
+.middle .content div img{
+    margin-top: 10px;
+}
+
+.middle .content .ram .text p:nth-child(2){
+    font-weight: bold;
+}

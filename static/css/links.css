@@ -1,0 +1,13 @@
+.middle .title{
+    display: flex;
+}
+.middle .title p{
+    margin: 50px 90px 50px 90px;
+}
+.middle .links div{
+    margin: 30px 30px 30px 30px;
+}
+.middle .links {
+    display: flex;
+}
+

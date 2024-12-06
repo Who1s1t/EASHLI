@@ -1,0 +1,30 @@
+{% extends "personal_area.html" %}
+
+
+{% block middle %}
+<div class="content">
+    <div class="ram">
+        <img src="../static/img/day.png" width="50px" height="50px">
+        <div class="text">
+            <p>Переходы сегодня</p>
+            <p>{{day}}</p>
+        </div>
+    </div>
+    <div class="ram">
+        <img src="../static/img/month.png" width="50px" height="50px">
+        <div class="text">
+            <p>Переходы за месяц</p>
+            <p>{{month}}</p>
+        </div>
+    </div>
+    <div class="ram">
+
+        <img src="../static/img/all.png" width="50px" height="50px">
+        <div class="text">
+            <p>Всего переходов</p>
+            <p>{{all}}</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

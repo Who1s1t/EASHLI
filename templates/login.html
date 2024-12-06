@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="register">
+    <a href="/"><img src="../static/img/logo.png" width="75px" height="75px"></a>
+    <p class="h1">С возвращением!</p>
+    <p class="reg">Авторизация</p>
+
+    <form action="" method="post" class="reg-form">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.email(placeholder="Email",class="form-control", type="email") }}<br>
+            {% for error in form.email.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+            {% endfor %}
+        </div>
+        <div>
+            {{ form.password(placeholder="Пароль",class="form-control", type="password") }}<br>
+            {% for error in form.password.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+            {% endfor %}
+        </div>
+        <div>{{ form.remember_me(class="remember-me") }} {{ form.remember_me.label(class="remember-me-text") }}</div>
+
+        {{ form.submit(type="submit", class="btn-primary",placeholder="Зарегистрироваться") }}
+
+    </form>
+    <p class="mes">{{message}}</p>
+</section>
+{% endblock %}
